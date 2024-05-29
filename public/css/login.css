@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  padding: 0 15px;
+  min-height: 100vh;
+  justify-content: center;
+  background: #f0f2f5;
+}
+
+nav {
+  position: fixed;
+  padding: 25px 60px;
+  z-index: 1;
+}
+
+nav a{
+  text-decoration: none;
+  background-color: red;
+}
+
+nav a h1 {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 6px 16px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background-color: rgba(13, 45, 62,0.8);
+  /* backdrop-filter: blur(10px); */
+}
+nav a h1:hover {
+  color: rgba(13, 45, 62,0.8);
+  background-color: #eb566c;
+  transition: all 0.5s ease-in-out;
+}
+
+.facebook-page {
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.facebook-page .text {
+  margin-bottom: 90px;
+}
+
+.facebook-page h1 {
+  color: #eb566c;
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.facebook-page p {
+  font-size: 1.75rem;
+  color: rgba(13, 45, 62,0.8);
+  white-space: nowrap;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+form input {
+  height: 55px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  padding: 0 14px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #1877f2;
+}
+
+::placeholder {
+  color: #777;
+  font-size: 1.063rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+.link .login {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgba(13, 45, 62,0.8);;
+  padding: 15px 0;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.link .login:hover {
+  background: #eb566c;
+}
+
+form a {
+  text-decoration: none;
+}
+
+.link .forgot {
+  color: #1877f2;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.link .forgot:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button a {
+  padding: 15px 20px;
+  background: #eb566c;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.063rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.button a:hover {
+  background: rgba(13, 45, 62,0.8);
+}
+
+@media (max-width: 900px) {
+  .facebook-page {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .facebook-page .text {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 460px) {
+  .facebook-page h1 {
+    font-size: 3.5rem;
+  }
+
+  .facebook-page p {
+    font-size: 1.3rem;
+  }
+
+  form {
+    padding: 15px;
+  }
+}

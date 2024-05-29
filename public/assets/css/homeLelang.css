@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+.circle{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#eb566c,  rgba(13, 45, 62,0.8));
+    clip-path: circle(630px at right 750px);
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    filter: opacity(0.7);
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 4fr auto;
+}
+
+section .vector-container img{
+    position: absolute;
+    width: 550px;
+    margin-top: 10px;
+    height: 450px;
+    right: 20px;
+}
+
+/* animasi untuk vector */
+.vector-container img:nth-child(1){
+    animation: fade1 15s infinite;
+}
+.vector-container img:nth-child(2){
+    animation: fade2 15s infinite;
+}
+.vector-container img:nth-child(3){
+    animation: fade3 15s infinite;
+}
+.vector-container img:nth-child(4){
+    animation: fade4 15s infinite;
+}
+
+section .contentLelang{
+    width: 450px;
+    color: rgba(13, 45, 62,0.8);
+    position: relative;
+    top: 4rem;
+    left: 0;
+    z-index: 1;
+    text-align: center;
+}
+
+section .contentLelang h1{
+    font-size: 3rem;
+    color: #eb566c;
+    font-family: "Ubuntu", sans-serif;
+}
+
+section .contentLelang p{
+    font-size: 0.70rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+    color: rgba(13, 45, 62,0.8);
+    font-family: "Roboto", sans-serif;
+}
+
+section #img{
+    width: 550px;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    margin-top: -6rem;
+    transform: scaleX(-1);
+}
+
+section .contentLelang a{
+    padding: 5px 25px;
+    background-color: rgba(13, 45, 62,0.8);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+section .contentLelang a:hover{
+    background-color: #FF5733;
+    color: #fff;
+}
+section .contentLelang a:active{
+    transform: scale(0.95);
+}
+
+/* untuk mengaplikasikan animasi */
+@keyframes fade1 {
+    0%{
+        opacity: 1;
+    } 25%{
+        opacity: 0;
+    } 50%{
+        opacity: 0;
+    } 75%{
+        opacity: 0;
+    } 100%{
+        opacity: 1;
+    }
+}
+@keyframes fade2 {
+    0%{
+        opacity: 0;
+    } 25%{
+        opacity: 1;
+    } 50%{
+        opacity: 0;
+    } 75%{
+        opacity: 0;
+    } 100%{
+        opacity: 0;
+    }
+}
+@keyframes fade3 {
+    0%{
+        opacity: 0;
+    } 25%{
+        opacity: 0;
+    } 50%{
+        opacity: 1;
+    } 75%{
+        opacity: 0;
+    } 100%{
+        opacity: 0;
+    }
+}
+@keyframes fade4 {
+    0%{
+        opacity: 0;
+    } 25%{
+        opacity: 0;
+    } 50%{
+        opacity: 0;
+    } 75%{
+        opacity: 1;
+    } 100%{
+        opacity: 0;
+    }
+}
